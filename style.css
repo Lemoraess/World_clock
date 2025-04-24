@@ -5,6 +5,7 @@ small {
 
 .container {
   background-color: #f9f7fe;
+  padding: 20px;
   margin: 120px auto;
   max-width: 600px;
   font-family: "Courier", Courier New, monospace;
