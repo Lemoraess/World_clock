@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.47/moment-timezone-with-data-1970-2030.min.js"></script>
@@ -15,9 +15,10 @@
     <div class="container">
         <div class="header">
             <div class="title">World Clocks</div>
-            <div><img
-                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/163/489/original/shecodes.png?1745005537"
-                    alt="SheCodes Logo" class="logo"></div>
+            <div>
+                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/163/489/original/shecodes.png?1745005537"
+                    alt="SheCodes Logo" class="logo" />
+            </div>
         </div>
 
         <select class="selectCity" id="selectCity">
@@ -28,43 +29,24 @@
             <option value="America/Santiago">Santiago 🇨🇱</option>
         </select>
 
-
-        <div id="display" class="display">
-            <div class="displayCities" id="los_angeles">
-                <div class="city">
-                    <div>Los Angeles🇺🇸</div>
-                    <div class="date"></div>
+        <div id="totalCities">
+            <div id="eachCityDisplay" class="eachCityDisplay">
+                <div id="city" class="name&date">
+                    <div id="nameCity" class="nameCity"></div>
+                    <div id="dateCity" class="dateCity"></div>
                 </div>
-
-                <div class="time"></div>
+                <div id="clock" class="clock"></div>
             </div>
-            <div class="displayCities" id="paris">
-                <div class="city">
-                    <div>Paris🇫🇷</div>
-                    <div class="date"></div>
-                </div>
-                <div class="time"></div>
-            </div>
-            <div class="displayCities" id="tokyo">
-                <div class="city">
-                    <div>Tokyo🇯🇵</div>
-                    <div class="date"></div>
-                </div>
-                <div class="time"></div>
-            </div>
-            <div class="displayCities" id="sydney">
-                <div class="city">
-                    <div>Sydney🇦🇺</div>
-                    <div class="date"></div>
-                </div>
-                <div class="time"></div>
-            </div>
-
         </div>
-        <div class="footer">Coded by <a href="https://github.com/Lemoraess">🇧🇷 Lenise Moraes</a> as part of the <a
-                href="https://www.shecodes.io/">SheCodes</a> Plus Add-on course training, is open-sourced on <a
-                href="https://github.com/Lemoraess">GitHub</a> and hosted on <a
-                href="https://worldclockhomeworkshecodeslenise.netlify.app/"> Netlify</a></div>
+
+        <div class="footer">
+            Coded by <a href="https://github.com/Lemoraess">🇧🇷 Lenise Moraes</a> as
+            part of the <a href="https://www.shecodes.io/">SheCodes</a> Plus Add-on
+            course training, is open-sourced on
+            <a href="https://github.com/Lemoraess">GitHub</a> and hosted on
+            <a href="https://worldclockhomeworkshecodeslenise.netlify.app/">
+                Netlify</a>
+        </div>
     </div>
 
     <script src="script.js"></script>
