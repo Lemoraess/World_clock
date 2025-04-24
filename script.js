@@ -51,21 +51,26 @@ setInterval(function () {
 });
 
 function displayCityTime(event) {
-  let cityTimeZone = event.target.value;
-  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
-  let cityTime = moment().tz(cityTimeZone);
-  let cityElement = document.querySelector("#display");
-  cityElement.innerHTML = `
+  if (event.target.value.length > 0) {
+    let cityTimeZone = event.target.value;
+    if (cityTimeZone === "current") {
+      cityTimeZone = moment.tz.guess();
+    }
+    let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+    let cityTime = moment().tz(cityTimeZone);
+    let cityElement = document.querySelector("#display");
+    cityElement.innerHTML = `
   <div class="displayCities">
     <div class="city">
       <div>${cityName}</div>
       <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
     </div>
     <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format(
-    "A"
-  )}</small></div>
+      "A"
+    )}</small></div>
   </div>
 `;
+  }
 }
 
 let selectCity = document.querySelector("#selectCity");
